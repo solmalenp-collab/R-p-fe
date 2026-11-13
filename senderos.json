@@ -1,0 +1,83 @@
+[
+  {
+
+    "id": "tromen",
+    "nombre": "Base del Volcán Lanín",
+    "zona": "Área Natural Protegida El Tromen.Norte Neuquino",
+    "dificultad": "muy-alta",
+    "descripcion": "Caminata en el importante estratovolcán de la provincia del Neuquén.",
+    "url": "senderos/lanin.html",
+    "ubicacion": {
+      "lat": -37.14,
+      "lng": -70
+    }
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+  {
+    "id": "lanin",
+    "nombre": "Base del Volcán Lanín",
+    "zona": "Parque Nacional Lanín · Junín de los Andes",
+    "dificultad": "muy-alta",
+    "descripcion": "Caminata hacia la base del volcán más emblemático de Neuquén, entre araucarias y paisaje volcánico.",
+    "url": "senderos/lanin.html",
+    "ubicacion": {
+      "lat": -39.59,
+      "lng": -71.46
+    }
+  },
+  {
+    "id": "chachin",
+    "nombre": "Cascada Chachín",
+    "zona": "Parque Nacional Lanín · Lago Lácar",
+    "dificultad": "baja",
+    "descripcion": "Paseo corto por el bosque hasta una cascada, ideal para hacer en familia.",
+    "url": "",
+    "ubicacion": {
+      "lat": -40.16,
+      "lng": -71.56
+    }
+  },
+  {
+    "id": "arrayanes",
+    "nombre": "Bosque de Arrayanes",
+    "zona": "Villa La Angostura",
+    "dificultad": "media",
+    "descripcion": "Recorrido por la península Quetrihué hasta un bosque único de arrayanes.",
+    "url": "",
+    "ubicacion": {
+      "lat": -40.83,
+      "lng": -71.61
+    }
+  },
+  {
+    "id": "belvedere",
+    "nombre": "Cerro Belvedere",
+    "zona": "Villa La Angostura",
+    "dificultad": "alta",
+    "descripcion": "Subida con miradores sobre el lago Nahuel Huapi y la cordillera.",
+    "url": "",
+    "ubicacion": {
+      "lat": -40.735,
+      "lng": -71.68
+    }
+  },
+  {
+    "id": "bandurrias",
+    "nombre": "Mirador Bandurrias",
+    "zona": "San Martín de los Andes",
+    "dificultad": "baja",
+    "descripcion": "Caminata accesible con una de las mejores vistas del lago Lácar.",
+    "url": "",
+    "ubicacion": {
+      "lat": -40.158,
+      "lng": -71.36
+    }
+  }
+]

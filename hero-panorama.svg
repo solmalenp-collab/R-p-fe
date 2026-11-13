@@ -1,0 +1,141 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2400 560" preserveAspectRatio="xMidYMid slice" role="img" aria-labelledby="t">
+  <title id="t">Panorama patagónico al atardecer: volcán Lanín nevado bajo las estrellas, cóndores, lago, araucarias, guanacos y un caminante sobre el sendero</title>
+  <defs>
+    <linearGradient id="cieloP" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#241a3f"/>
+      <stop offset="0.3" stop-color="#4f3466"/>
+      <stop offset="0.52" stop-color="#9c5068"/>
+      <stop offset="0.68" stop-color="#e0704a"/>
+      <stop offset="0.76" stop-color="#f6c36b"/>
+    </linearGradient>
+    <!-- Cielo de atardecer (misma paleta que el logo) -->
+    <linearGradient id="cielo" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#3b2a55"/>
+      <stop offset="0.35" stop-color="#8a4a6b"/>
+      <stop offset="0.62" stop-color="#e0704a"/>
+      <stop offset="0.8" stop-color="#f6c36b"/>
+    </linearGradient>
+    <radialGradient id="brillo" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#ffe3a3" stop-opacity="0.9"/>
+      <stop offset="1" stop-color="#ffe3a3" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="lago" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#f0a865"/>
+      <stop offset="0.5" stop-color="#9a5c6e"/>
+      <stop offset="1" stop-color="#3b3a5a"/>
+    </linearGradient>
+    <linearGradient id="volcan" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#9a5868"/>
+      <stop offset="1" stop-color="#6b3f55"/>
+    </linearGradient>
+
+    <!-- Cóndor andino visto desde abajo, planeando -->
+    <g id="condor">
+      <path d="M-6,-2 C-30,-22 -58,-22 -86,-11 L-80,-5 L-88,-2 L-80,1 L-86,5 L-76,5 C-52,11 -26,11 -6,8 Z"/>
+      <path d="M6,-2 C30,-22 58,-22 86,-11 L80,-5 L88,-2 L80,1 L86,5 L76,5 C52,11 26,11 6,8 Z"/>
+      <ellipse cx="0" cy="3" rx="9" ry="7"/>
+      <path d="M-7,8 L0,20 L7,8 Z"/>
+      <circle cx="0" cy="-8" r="4"/>
+      <!-- collar blanco característico -->
+      <ellipse cx="0" cy="-3" rx="6" ry="2.6" fill="#f4efe6"/>
+      <!-- franja blanca en las alas -->
+      <path d="M-20,2 C-38,3 -56,2 -70,0" fill="none" stroke="#f4efe6" stroke-width="2.4" stroke-linecap="round" opacity="0.85"/>
+      <path d="M20,2 C38,3 56,2 70,0" fill="none" stroke="#f4efe6" stroke-width="2.4" stroke-linecap="round" opacity="0.85"/>
+    </g>
+
+    <!-- Araucaria (pehuén): tronco recto y copa en forma de paraguas -->
+    <g id="araucaria">
+      <rect x="-3" y="-150" width="6" height="150"/>
+      <path d="M-55,-118 Q-30,-134 0,-136 Q30,-134 55,-118 Q30,-124 0,-124 Q-30,-124 -55,-118 Z"/>
+      <path d="M-48,-134 Q-24,-150 0,-152 Q24,-150 48,-134 Q24,-140 0,-140 Q-24,-140 -48,-134 Z"/>
+      <path d="M-36,-150 Q-18,-164 0,-166 Q18,-164 36,-150 Q18,-156 0,-156 Q-18,-156 -36,-150 Z"/>
+      <path d="M-20,-164 Q0,-178 20,-164 Q0,-170 -20,-164 Z"/>
+      <path d="M-55,-118 l-6,6 M55,-118 l6,6 M-48,-134 l-6,5 M48,-134 l6,5" stroke-width="3" stroke-linecap="round"/>
+    </g>
+
+    <!-- Guanaco de perfil -->
+    <g id="guanaco">
+      <ellipse cx="0" cy="-30" rx="24" ry="11"/>
+      <path d="M-24,-34 q-7,4 -5,12 q3,-6 7,-6 z"/>
+      <polygon points="14,-37 23,-40 32,-72 24,-74"/>
+      <ellipse cx="33" cy="-74" rx="9" ry="5"/>
+      <polygon points="25,-78 27,-87 30,-78"/>
+      <polygon points="29,-78 32,-86 34,-77"/>
+      <rect x="-19" y="-24" width="4" height="24" rx="1.5"/>
+      <rect x="-12" y="-24" width="4" height="24" rx="1.5"/>
+      <rect x="11" y="-24" width="4" height="24" rx="1.5"/>
+      <rect x="17" y="-24" width="4" height="24" rx="1.5"/>
+    </g>
+  </defs>
+
+  <!-- Cielo -->
+  <rect width="2400" height="560" fill="url(#cieloP)"/>
+
+  <!-- Estrellas y destellos -->
+  <g fill="#fff4ea" opacity="0.8"><circle cx="1336" cy="50" r="1.6"/><circle cx="207" cy="30" r="2"/><circle cx="395" cy="105" r="2"/><circle cx="247" cy="141" r="1.1"/><circle cx="163" cy="34" r="1.6"/><circle cx="1722" cy="29" r="1.1"/><circle cx="381" cy="153" r="1.6"/><circle cx="252" cy="156" r="0.9"/><circle cx="924" cy="173" r="2"/><circle cx="263" cy="159" r="2"/><circle cx="1634" cy="24" r="1.1"/><circle cx="200" cy="154" r="1.1"/><circle cx="1196" cy="119" r="1.1"/><circle cx="2224" cy="42" r="2"/><circle cx="1273" cy="155" r="1.1"/><circle cx="432" cy="160" r="2"/><circle cx="779" cy="107" r="0.9"/><circle cx="2253" cy="28" r="2"/><circle cx="254" cy="170" r="1.1"/><circle cx="2043" cy="186" r="2"/><circle cx="1761" cy="92" r="1.6"/><circle cx="1866" cy="104" r="1.3"/><circle cx="1027" cy="58" r="1.1"/><circle cx="345" cy="159" r="1.3"/><circle cx="2161" cy="138" r="1.3"/><circle cx="1848" cy="85" r="2"/><circle cx="309" cy="42" r="2"/><circle cx="1722" cy="54" r="1.3"/><circle cx="632" cy="137" r="1.6"/><circle cx="170" cy="183" r="0.9"/><circle cx="2295" cy="158" r="1.3"/><circle cx="1403" cy="189" r="1.3"/><circle cx="2044" cy="160" r="1.6"/><circle cx="291" cy="35" r="1.3"/><circle cx="1951" cy="190" r="0.9"/><circle cx="258" cy="91" r="2"/><circle cx="1835" cy="84" r="1.6"/><circle cx="1431" cy="17" r="1.6"/><circle cx="1465" cy="55" r="2"/><circle cx="489" cy="138" r="0.9"/><circle cx="903" cy="85" r="1.1"/><circle cx="1024" cy="113" r="1.6"/><circle cx="2043" cy="32" r="1.1"/><circle cx="1849" cy="114" r="2"/><circle cx="1148" cy="47" r="1.6"/><circle cx="2263" cy="83" r="1.6"/><circle cx="1479" cy="186" r="1.6"/><circle cx="955" cy="50" r="0.9"/><circle cx="731" cy="50" r="1.1"/><circle cx="965" cy="15" r="1.6"/><circle cx="756" cy="79" r="1.3"/><circle cx="26" cy="49" r="1.6"/><circle cx="2199" cy="106" r="2"/><circle cx="2329" cy="93" r="1.1"/><circle cx="2121" cy="170" r="0.9"/><circle cx="1880" cy="186" r="2"/><circle cx="1617" cy="113" r="1.6"/><circle cx="1624" cy="38" r="1.6"/><circle cx="1650" cy="27" r="1.1"/><circle cx="285" cy="65" r="1.6"/><circle cx="674" cy="40" r="1.3"/><circle cx="225" cy="38" r="0.9"/><circle cx="2331" cy="50" r="2"/><circle cx="425" cy="105" r="2"/><circle cx="114" cy="30" r="1.1"/><circle cx="1551" cy="50" r="1.3"/><circle cx="1432" cy="166" r="1.3"/><circle cx="1952" cy="43" r="0.9"/><circle cx="2009" cy="131" r="1.6"/><circle cx="1991" cy="91" r="0.9"/></g>
+  <g fill="#fff4ea" opacity="0.9"><path transform="translate(1110,38) scale(1)" d="M0,-10 L2,-2 L10,0 L2,2 L0,10 L-2,2 L-10,0 L-2,-2 Z"/><path transform="translate(1300,28) scale(0.8)" d="M0,-10 L2,-2 L10,0 L2,2 L0,10 L-2,2 L-10,0 L-2,-2 Z"/><path transform="translate(980,90) scale(0.6)" d="M0,-10 L2,-2 L10,0 L2,2 L0,10 L-2,2 L-10,0 L-2,-2 Z"/><path transform="translate(1420,70) scale(0.7)" d="M0,-10 L2,-2 L10,0 L2,2 L0,10 L-2,2 L-10,0 L-2,-2 Z"/><path transform="translate(560,50) scale(0.7)" d="M0,-10 L2,-2 L10,0 L2,2 L0,10 L-2,2 L-10,0 L-2,-2 Z"/><path transform="translate(1880,45) scale(0.8)" d="M0,-10 L2,-2 L10,0 L2,2 L0,10 L-2,2 L-10,0 L-2,-2 Z"/></g>
+
+  <!-- Sol poniéndose -->
+  <circle cx="1480" cy="330" r="170" fill="url(#brillo)"/>
+  <circle cx="1480" cy="330" r="62" fill="#ffe3a3"/>
+
+  <!-- Cordillera lejana -->
+  <polygon points="0,350 140,300 280,340 420,285 560,330 700,295 840,345 960,320 1440,320 1560,350 1700,290 1840,330 1990,280 2120,330 2260,295 2400,330 2400,440 0,440" fill="#a35f6c"/>
+
+  <!-- Volcán Lanín con nieve -->
+  <polygon points="870,420 1200,60 1530,420" fill="url(#volcan)"/>
+  <polygon points="1200,60 1133,133 1152,129 1170,150 1190,132 1210,154 1228,130 1248,140 1267,133" fill="#fff4ea"/>
+  <polygon points="1200,60 1267,133 1248,140 1228,130 1210,154 1200,140" fill="#e7d6dc" opacity="0.7"/>
+
+  <!-- Lago y reflejos -->
+  <rect x="0" y="420" width="2400" height="140" fill="url(#lago)"/>
+  <polygon points="960,420 1200,560 1440,420" fill="#6b3f55" opacity="0.35"/>
+  <g stroke="#ffe3a3" stroke-linecap="round" opacity="0.75">
+    <line x1="1410" y1="436" x2="1550" y2="436" stroke-width="4"/>
+    <line x1="1430" y1="453" x2="1530" y2="453" stroke-width="3"/>
+    <line x1="1450" y1="470" x2="1510" y2="470" stroke-width="2.5"/>
+  </g>
+
+  <!-- Orillas -->
+  <path d="M0,440 L150,395 L300,415 L420,390 L560,410 L700,400 L790,430 L900,490 L900,560 L0,560 Z" fill="#2f5d50"/>
+  <path d="M1450,500 L1530,460 L1600,405 L1730,425 L1860,395 L2000,412 L2150,385 L2400,400 L2400,560 L1450,560 Z" fill="#2f5d50"/>
+  <path d="M0,540 C400,505 800,550 1200,545 C1600,540 2000,515 2400,520 L2400,560 L0,560 Z" fill="#1f3f36"/>
+
+  <!-- El camino que sube hasta el caminante -->
+  <path d="M1540,560 C1575,525 1540,495 1600,472 S1665,440 1690,421" fill="none" stroke="#f6c36b" stroke-width="3.5" stroke-linecap="round" stroke-dasharray="2 10" opacity="0.85"/>
+
+  <!-- Araucarias -->
+  <g fill="#162d27" stroke="#162d27">
+    <use href="#araucaria" transform="translate(80,480) scale(0.65)"/>
+    <use href="#araucaria" transform="translate(220,500) scale(0.5)"/>
+    <use href="#araucaria" transform="translate(330,470) scale(0.78)"/>
+    <use href="#araucaria" transform="translate(455,455) scale(0.55)"/>
+    <use href="#araucaria" transform="translate(1900,460) scale(0.72)"/>
+    <use href="#araucaria" transform="translate(2020,445) scale(0.5)"/>
+    <use href="#araucaria" transform="translate(2250,470) scale(0.68)"/>
+  </g>
+
+  <!-- Guanacos -->
+  <g fill="#162d27">
+    <use href="#guanaco" transform="translate(1612,407) scale(0.7)"/>
+    <use href="#guanaco" transform="translate(1648,413) scale(0.55)"/>
+  </g>
+
+  <!-- Caminante con mochila -->
+  <g fill="#111" stroke="#111" stroke-linecap="round" stroke-linejoin="round" transform="translate(1690,416) scale(0.8)">
+    <circle cx="9" cy="-62" r="8" stroke="none"/>
+    <rect x="-14" y="-52" width="15" height="25" rx="4" stroke="none"/>
+    <line x1="8" y1="-51" x2="4" y2="-25" stroke-width="10"/>
+    <line x1="8" y1="-46" x2="21" y2="-31" stroke-width="5"/>
+    <line x1="24" y1="-46" x2="29" y2="4" stroke-width="3"/>
+    <line x1="4" y1="-25" x2="15" y2="2" stroke-width="7"/>
+    <line x1="4" y1="-25" x2="-8" y2="0" stroke-width="7"/>
+  </g>
+
+  <!-- Cóndores -->
+  <g fill="#161616">
+    <use href="#condor" transform="translate(700,175) rotate(-6) scale(1.05)"/>
+    <use href="#condor" transform="translate(1680,115) rotate(6) scale(0.8)"/>
+    <use href="#condor" transform="translate(1800,180) rotate(-4) scale(0.5)"/>
+  </g>
+</svg>

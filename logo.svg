@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" role="img" aria-labelledby="t">
+  <title id="t">Rüpüfe: caminante con mochila frente a la montaña al atardecer</title>
+  <defs>
+    <linearGradient id="cielo" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#5b3a6b"/>
+      <stop offset="0.45" stop-color="#e0704a"/>
+      <stop offset="1" stop-color="#f6c36b"/>
+    </linearGradient>
+    <clipPath id="circulo">
+      <circle cx="60" cy="60" r="58"/>
+    </clipPath>
+  </defs>
+
+  <g clip-path="url(#circulo)">
+    <!-- Cielo al atardecer -->
+    <rect width="120" height="120" fill="url(#cielo)"/>
+
+    <!-- Sol poniéndose detrás de la montaña -->
+    <circle cx="94" cy="62" r="15" fill="#ffe3a3"/>
+    <circle cx="94" cy="62" r="20" fill="#ffe3a3" opacity="0.25"/>
+
+    <!-- Montaña de fondo con nieve (volcán) -->
+    <polygon points="8,92 60,30 112,92" fill="#8a4f5e"/>
+    <polygon points="60,30 50,42 56,40 60,45 64,40 70,42" fill="#fff4ea"/>
+
+    <!-- Cerros del frente -->
+    <polygon points="-5,120 -5,88 28,70 55,92 85,74 125,96 125,120" fill="#2f5d50"/>
+    <polygon points="-5,120 -5,100 40,90 80,104 125,94 125,120" fill="#1f3f36"/>
+
+    <!-- Caminante con mochila (silueta) -->
+    <g fill="#1a1a1a" stroke="#1a1a1a" stroke-linecap="round" stroke-linejoin="round">
+      <!-- cabeza -->
+      <circle cx="70" cy="66" r="3.4" stroke="none"/>
+      <!-- mochila -->
+      <rect x="61.5" y="70" width="6.5" height="10" rx="2" stroke="none"/>
+      <!-- torso -->
+      <line x1="69.5" y1="70.5" x2="68" y2="81" stroke-width="4"/>
+      <!-- brazo y bastón -->
+      <line x1="69.5" y1="72.5" x2="74.5" y2="78" stroke-width="2.2"/>
+      <line x1="75.5" y1="72" x2="77.5" y2="92" stroke-width="1.4"/>
+      <!-- piernas caminando -->
+      <line x1="68" y1="81" x2="72.5" y2="91" stroke-width="2.8"/>
+      <line x1="68" y1="81" x2="63.5" y2="90" stroke-width="2.8"/>
+    </g>
+  </g>
+
+  <!-- Borde -->
+  <circle cx="60" cy="60" r="58" fill="none" stroke="#f4efe6" stroke-width="3"/>
+</svg>
