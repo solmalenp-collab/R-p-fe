@@ -2,7 +2,7 @@
    Senderos de Neuquén — Estilos generales
       Índice:
    1. Variables y reset
-   2. Base y tipografía
+   2. Base, tipografía y accesibilidad
    3. Header y navegación
    4. Botones
    5. Hero
@@ -11,7 +11,8 @@
    8. Nosotros
    9. Contacto (formulario)
    10. Footer
-   11. Responsive (tablet y escritorio)
+   11. Responsive 
+   12. Mapa de la provincia con los senderos
    ========================================================= */
 
 /* ---------- 1. Variables y reset ---------- */
@@ -19,11 +20,16 @@
   --verde: #2f5d50;
   --verde-oscuro: #1f3f36;
   --arena: #f4efe6;
-  --tierra: #c46a3b;
+  --tierra: #b35a2d;            /* contraste */
+  --tierra-oscuro: #8f4521;
+  --dorado: #f6c36b;
   --texto: #2b2b2b;
   --texto-suave: #5f5f5f;
+  --tinta: #1a1a1a;             /* texto sobre colores claros */
   --blanco: #ffffff;
   --borde: #e2dccf;
+  --aviso-fondo: #fff6e0;
+  --error: #c0392b;
 
   --radio: 12px;
   --sombra: 0 6px 18px rgba(0, 0, 0, 0.08);
@@ -46,20 +52,12 @@ img {
   display: block;
 }
 
-.salto-contenido {
-  position: absolute;
-  left: -9999px;
+/* ---------- 2. Base , tipografía y accecibilidad---------- */
+html {
+  /* El header es fijo */
+  scroll-padding-top: 7rem;
 }
 
-.salto-contenido:focus {
-  left: 1rem;
-  top: 1rem;
-  z-index: 1000;
-  background: white;
-  padding: 1rem;
-}
-
-/* ---------- 2. Base y tipografía ---------- */
 body {
   font-family: var(--fuente-texto);
   color: var(--texto);
@@ -99,6 +97,23 @@ a { color: var(--verde); }
   clip: rect(0 0 0 0);
   white-space: nowrap;
 }
+
+/* "Saltar al contenido": aparece al navegar con Tab */
+.salto {
+  position: absolute;
+  top: 0;
+  left: 1rem;
+  z-index: 20;
+  padding: 0.75rem 1rem;
+  background-color: var(--blanco);
+  color: var(--verde-oscuro);
+  font-weight: 700;
+  border-radius: 0 0 var(--radio) var(--radio);
+  transform: translateY(-100%);
+}
+
+.salto:focus { transform: translateY(0); }
+
 
 /* ---------- 3. Header y navegación ---------- */
 .header {
@@ -146,7 +161,7 @@ a { color: var(--verde); }
   font-family: var(--fuente-texto);
   font-size: 0.75rem;
   font-weight: 600;
-  color: #f6c36b;
+  color: var(--dorado);
   letter-spacing: 0.04em;
 }
 
@@ -196,7 +211,7 @@ a { color: var(--verde); }
 
 .boton:hover,
 .boton:focus-visible {
-  background-color: #a8552c;
+  background-color: var(--tierra-oscuro);
   transform: translateY(-2px);
 }
 
@@ -233,11 +248,28 @@ a { color: var(--verde); }
   font-size: 1.05rem;
 }
 
+.hero .hero__nombre {
+  font-family: var(--fuente-titulos);
+  font-weight: 900;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--dorado);
+  margin-bottom: 0.5rem;
+}
+
+.hero__significado {
+  font-style: italic;
+  text-transform: uppercase;
+  letter-spacing: normal;
+}
+
+/* Grupo de botones de la portada */
 .hero__botones {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   gap: 1rem;
+  /* margin-bottom: 0; */
 }
 
 /* Encabezado simple para páginas internas */
@@ -265,14 +297,18 @@ a { color: var(--verde); }
   margin: 0 auto 2rem;
 }
 
-/* Grilla de tarjetas: 1 columna en celular */
+/* lista de tarjetas: 1 columna en celular */
 .grilla {
+  list-style: none;
   display: grid;
   grid-template-columns: 1fr;
   gap: 1.5rem;
 }
+/*para que midan lo mismo*/
+.grilla > li { display: flex; }
 
 .tarjeta {
+  width: 100%;
   background-color: var(--blanco);
   border-radius: var(--radio);
   box-shadow: var(--sombra);
@@ -316,7 +352,7 @@ a { color: var(--verde); }
 
 .tarjeta__datos li {
   font-size: 0.85rem;
-  background-color: var(--arena);
+  background-color: var(--fondo, var(--arena));
   padding: 0.2rem 0.6rem;
   border-radius: 999px;
 }
@@ -338,9 +374,30 @@ a { color: var(--verde); }
 }
 
 /* Etiquetas de dificultad */
-.dificultad--baja { background-color: #d8ecd9 !important; }
-.dificultad--media { background-color: #f6e3b8 !important; }
-.dificultad--alta { background-color: #f3cbc0 !important; }
+.dificultad--baja {
+  --color: #2e9e4f;
+  --color-texto: var(--tinta);
+  --fondo: #d8ecd9;
+}
+
+.dificultad--media {
+  --color: #e0b100;
+  --color-texto: var(--tinta);
+  --fondo: #f6e3b8;
+}
+
+.dificultad--alta {
+  --color: #e67e22;
+  --color-texto: var(--tinta);
+  --fondo: #f8d7b8;
+}
+
+.dificultad--muy-alta {
+  --color: #c0392b;
+  --color-texto: var(--blanco);
+  --fondo: #f3cbc0;
+}
+
 
 /* Bloque "por qué" en el inicio */
 .beneficios {
@@ -352,6 +409,7 @@ a { color: var(--verde); }
 }
 
 .beneficio__icono {
+  display: block;
   font-size: 2rem;
   margin-bottom: 0.5rem;
 }
@@ -500,6 +558,15 @@ a { color: var(--verde); }
   border-radius: var(--radio);
   box-shadow: var(--sombra);
 }
+
+.formulario__nota {
+  font-size: 0.9rem;
+  color: var(--texto-suave);
+}
+
+/* Asterisco de campo obligatorio (el lector de pantalla usa "required") */
+.obligatorio { color: var(--error); }
+
 
 .campo {
   display: flex;
@@ -824,3 +891,4 @@ a { color: var(--verde); }
 @media (prefers-reduced-motion: reduce) {
   .punto::after { animation: none; }
 }
+S
