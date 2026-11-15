@@ -1,31 +1,13 @@
 [
   {
-
-    "id": "tromen",
-    "nombre": "Base del Volcán Lanín",
-    "zona": "Área Natural Protegida El Tromen.Norte Neuquino",
-    "dificultad": "muy-alta",
-    "descripcion": "Caminata en el importante estratovolcán de la provincia del Neuquén.",
-    "url": "senderos/lanin.html",
-    "ubicacion": {
-      "lat": -37.14,
-      "lng": -70
-    }
-  }
-  
-  
-  
-  
-  
-  
-  
-  
-  {
     "id": "lanin",
-    "nombre": "Base del Volcán Lanín",
+    "nombre": "Volcán Lanín",
     "zona": "Parque Nacional Lanín · Junín de los Andes",
     "dificultad": "muy-alta",
-    "descripcion": "Caminata hacia la base del volcán más emblemático de Neuquén, entre araucarias y paisaje volcánico.",
+    "duracion": "2 días y 1 noche",
+    "descripcion": "Caminata hacia la base del volcán más emblemático de la provincia, entre araucarias y paisaje volcánico.",
+    "imagen": "img/lanin/laninprincipal.jpeg",
+    "alt": "Volcán Lanín nevado sobre el bosque",
     "url": "senderos/lanin.html",
     "ubicacion": {
       "lat": -39.59,
@@ -35,13 +17,20 @@
   {
     "id": "chachin",
     "nombre": "Cascada Chachín",
-    "zona": "Parque Nacional Lanín · Lago Lácar",
+    "zona": "Parque Nacional Lanín · Lago Nonthué",
     "dificultad": "baja",
-    "descripcion": "Paseo corto por el bosque hasta una cascada, ideal para hacer en familia.",
-    "url": "",
+    "duracion": "1 hora · 2 km",
+    "descripcion": "Un paseo corto por el bosque hasta una cascada, ideal para hacer en familia.",
+    "imagen": "img/chachin/cascadachachin.jpg",
+    "alt": "Cascada Chachín entre la vegetación",
+    "url": "senderos/chachin.html",
     "ubicacion": {
       "lat": -40.16,
       "lng": -71.56
+    },
+    "ajusteMapa": {
+      "x": -0.47,
+      "y": -0.01
     }
   },
   {
@@ -49,11 +38,18 @@
     "nombre": "Bosque de Arrayanes",
     "zona": "Villa La Angostura",
     "dificultad": "media",
+    "duracion": "6 a 8 horas · 12 km",
     "descripcion": "Recorrido por la península Quetrihué hasta un bosque único de arrayanes.",
-    "url": "",
+    "imagen": "img/arrayanes/arrayanesprincipal.jpg",
+    "alt": "Troncos color canela del bosque de arrayanes",
+    "url": "senderos/arrayanes.html",
     "ubicacion": {
       "lat": -40.83,
       "lng": -71.61
+    },
+    "ajusteMapa": {
+      "x": 0.89,
+      "y": 0.48
     }
   },
   {
@@ -61,23 +57,112 @@
     "nombre": "Cerro Belvedere",
     "zona": "Villa La Angostura",
     "dificultad": "alta",
+    "duracion": "3 horas ida y vuelta",
     "descripcion": "Subida con miradores sobre el lago Nahuel Huapi y la cordillera.",
-    "url": "",
+    "imagen": "img/belvedere/belvederelago.jpg",
+    "alt": "Vista desde el Cerro Belvedere hacia el lago",
+    "url": "senderos/belvedere.html",
     "ubicacion": {
       "lat": -40.735,
       "lng": -71.68
+    },
+    "ajusteMapa": {
+      "x": -1.4,
+      "y": -1.08
     }
   },
   {
     "id": "bandurrias",
-    "nombre": "Mirador Bandurrias",
+    "nombre": "Mirador Las Bandurrias",
     "zona": "San Martín de los Andes",
     "dificultad": "baja",
+    "duracion": "2 a 4 horas · 6 a 10 km",
     "descripcion": "Caminata accesible con una de las mejores vistas del lago Lácar.",
-    "url": "",
+    "imagen": "img/bandurrias/bandurriasmirador.jpg",
+    "alt": "Vista desde el Mirador Bandurrias al lago Lácar",
+    "url": "senderos/bandurrias.html",
     "ubicacion": {
       "lat": -40.158,
       "lng": -71.36
+    },
+    "ajusteMapa": {
+      "x": 0.46,
+      "y": 0.0
+    }
+  },
+  {
+    "id": "limay",
+    "nombre": "Paseo costero Río Limay",
+    "zona": "Confluencia · Neuquén Capital",
+    "dificultad": "baja",
+    "duracion": "Distancia a elección",
+    "descripcion": "Recorrido por la costa del río Limay, con senderos peatonales, bicisendas y miradores.",
+    "imagen": "img/limay/limayprincipal.jpg",
+    "alt": "Paseo costero junto al río Limay",
+    "url": "senderos/limay.html",
+    "ubicacion": {
+      "lat": -38.98,
+      "lng": -68.06
+    }
+  },
+  {
+    "id": "atravesada",
+    "nombre": "Cerro La Atravesada",
+    "zona": "Sainuco · Primeros Pinos",
+    "dificultad": "alta",
+    "duracion": "4 a 5 horas · 10,5 km",
+    "descripcion": "Caminata de montaña entre paisajes de estepa, araucarias y vistas panorámicas de la región.",
+    "imagen": "img/atravesada/atravesadaprincipal.jpeg",
+    "alt": "Cerro La Atravesada",
+    "url": "senderos/atravesada.html",
+    "ubicacion": {
+      "lat": -38.95,
+      "lng": -70.62
+    }
+  },
+  {
+    "id": "copahue",
+    "nombre": "Volcán Copahue",
+    "zona": "Caviahue · Departamento de Ñorquín",
+    "dificultad": "muy-alta",
+    "duracion": "7 horas · 18 km",
+    "descripcion": "Ascenso de alta montaña por un entorno volcánico, con guía habilitado.",
+    "imagen": "img/copahue/copahuevolcan.jpeg",
+    "alt": "Volcán Copahue",
+    "url": "senderos/copahue.html",
+    "ubicacion": {
+      "lat": -37.86,
+      "lng": -71.17
+    }
+  },
+  {
+    "id": "domuyo",
+    "nombre": "Volcán Domuyo",
+    "zona": "Cordillera del Viento · Norte neuquino",
+    "dificultad": "muy-alta",
+    "duracion": "4 a 5 días · 36 km",
+    "descripcion": "Expedición de alta montaña al techo de la Patagonia, con etapas de aproximación y aclimatación.",
+    "imagen": "img/domuyo/domuyoprincipal.jpeg",
+    "alt": "Volcán Domuyo",
+    "url": "senderos/domuyo.html",
+    "ubicacion": {
+      "lat": -36.63,
+      "lng": -70.43
+    }
+  },
+  {
+    "id": "tromen",
+    "nombre": "Volcán Tromen",
+    "zona": "Parque Provincial El Tromen · Norte neuquino",
+    "dificultad": "muy-alta",
+    "duracion": "2 días completos",
+    "descripcion": "El recorrido atraviesa un ambiente de montaña de origen volcánico, con pendientes pronunciadas,\n                  terrenos rocosos y grandes acumulaciones de lava solidificada.",
+    "imagen": "img/tromen/tromenprincipal.jpeg",
+    "alt": "Paisaje del sector Tromen",
+    "url": "senderos/tromen.html",
+    "ubicacion": {
+      "lat": -37.14,
+      "lng": -70.0
     }
   }
 ]
